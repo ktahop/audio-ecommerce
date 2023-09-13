@@ -6,12 +6,22 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      'primary': '#d87d4a',
+      'accent': '#fbaf85',
+      'white': '#ffffff',
+      'black': '#000000',
+      'gray': '#afafaf'
+    },
+    variants: {
+      fill: ['hover']
+    },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+        'hero-desktop': "url('/assets/home/desktop/image-hero.jpg')",
+        'hero-tablet': "url('/assets/home/tablet/image-header.jpg')",
+        'hero-mobile': "url('/assets/home/mobile/image-header.jpg')"
+      }
     },
   },
   plugins: [],
