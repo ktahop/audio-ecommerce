@@ -6,24 +6,27 @@ import Image from "next/image"
 
 const Nav = () => {
   return (
-    <nav className="flex items-center justify-between text-white py-5">
-      <Image
-        src={hamburger}
-        alt="audiophile logo"
-        className="lg:hidden"
-      />
-      <Image
-        src={logo}
-        alt="audiophile logo"
-      />
-      <div className="hidden lg:block">
-        <NavLinks />
-      </div>
-      <Image 
-        src={cart}
-        alt="cart icon"
-      />
-    </nav>
+    <>
+      <nav className="flex items-center justify-between text-white py-[50px]">
+        <Image
+          src={hamburger}
+          alt="audiophile logo"
+          className="lg:hidden"
+        />
+        <Image
+          src={logo}
+          alt="audiophile logo"
+        />
+        <div className="hidden lg:block">
+          <NavLinks />
+        </div>
+        <Image 
+          src={cart}
+          alt="cart icon"
+        />
+      </nav>
+      <hr className="opacity-30"/>
+    </>
   )
 }
 

@@ -11,7 +11,8 @@ module.exports = {
       'accent': '#fbaf85',
       'white': '#ffffff',
       'black': '#000000',
-      'gray': '#afafaf'
+      'dark-gray': '#afafaf',
+      'light-gray': '#f1f1f1'
     },
     variants: {
       fill: ['hover']

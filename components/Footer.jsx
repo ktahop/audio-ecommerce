@@ -14,7 +14,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-black text-gray">
+    <footer className="bg-black text-dark-gray">
       <div className="container mx-auto px-[1rem]">
         <hr style={hrBar}/>
         <div className="py-[50px] flex flex-col items-center md:flex-row md:justify-between">
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
         <div className="py-[70px] flex flex-col md:flex-row items-center justify-between">
           <p>Copyright 2023. All Rights Reserved</p>
-          <div className='mt-[50px] flex items-center gap-5 md:relative md:top-[-20px]'>
+          <div className='mt-[50px] sm:mt-0 flex items-center gap-5 lg:relative lg:top-[-50px]'>
             <a href="#">
               <Image 
                 src={facebook}

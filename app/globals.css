@@ -3,6 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --clr-primary: #d87d4a;
+  --clr-accent: #fbaf85;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-darker-gray: #3a3a3a;
+  --clr-dark-gray: #afafaf;
+  --clr-light-gray: #f1f1f1;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
   font-weight: 500;
@@ -16,6 +26,7 @@ h1 {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
 h2 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -23,6 +34,7 @@ h2 {
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
+
 h3 {
   font-size: 2rem;
   font-weight: 700;
@@ -30,6 +42,7 @@ h3 {
   letter-spacing: 1.15px;
   text-transform: uppercase;
 }
+
 h4 {
   font-size: 1.75rem;
   font-weight: 700;
@@ -37,6 +50,7 @@ h4 {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
 h5 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -44,6 +58,7 @@ h5 {
   letter-spacing: 1.7px;
   text-transform: uppercase;
 }
+
 h6 {
   font-size: 1.125rem;
   font-weight: 700;
@@ -68,8 +83,46 @@ h6 {
   text-transform: uppercase;
 }
 
+.btn-one {
+  width: 12.5rem;
+  padding: 10px 0;
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  transition: background-color 150ms;
+}
+
+.btn-one:hover {
+  background-color: var(--clr-accent);
+}
+
+.btn-two {
+  width: 12.5rem;
+  padding: 10px 0;
+  background-color: transparent;
+  color: var(--clr-black);
+  border: 1px solid --clr-black;
+  transition: background-color 150ms, color 150ms;
+}
+
+.btn-two:hover {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+
+.btn-three {
+  width: 12.5rem;
+  padding: 10px 0;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  transition: background-color 150ms;
+}
+
+.btn-three:hover {
+  background-color: var(--clr-darker-gray);
+}
+
 @media only screen and (max-width: 780px) {
   :root {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
