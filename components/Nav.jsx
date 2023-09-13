@@ -25,7 +25,6 @@ const Nav = () => {
           alt="cart icon"
         />
       </nav>
-      <hr className="opacity-30"/>
     </>
   )
 }

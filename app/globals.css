@@ -84,6 +84,7 @@ h6 {
 }
 
 .btn-one {
+  display: inline-block;
   width: 12.5rem;
   padding: 10px 0;
   background-color: var(--clr-primary);
