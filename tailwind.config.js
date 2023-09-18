@@ -21,7 +21,9 @@ module.exports = {
       backgroundImage: {
         'hero-desktop': "url('/assets/home/desktop/image-hero.jpg')",
         'hero-tablet': "url('/assets/home/tablet/image-header.jpg')",
-        'hero-mobile': "url('/assets/home/mobile/image-header.jpg')"
+        'hero-mobile': "url('/assets/home/mobile/image-header.jpg')",
+        'circle-pattern': "url('/assets/home/desktop/pattern-circles.svg')",
+        'zx7': "url('/assets/home/desktop/image-speaker-zx7.jpg')"
       }
     },
   },
