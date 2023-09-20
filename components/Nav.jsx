@@ -6,8 +6,8 @@ import Image from "next/image"
 
 const Nav = () => {
   return (
-    <>
-      <nav className="flex items-center justify-between text-white py-[50px]">
+    <header className="bg-black">
+      <nav className="container mx-auto px-[1rem] flex items-center justify-between text-white py-[50px]">
         <Image
           src={hamburger}
           alt="audiophile logo"
@@ -17,7 +17,7 @@ const Nav = () => {
           src={logo}
           alt="audiophile logo"
         />
-        <div className="hidden lg:block">
+        <div className="hidden lg:block relative left-[-4rem]">
           <NavLinks />
         </div>
         <Image 
@@ -25,7 +25,7 @@ const Nav = () => {
           alt="cart icon"
         />
       </nav>
-    </>
+    </header>
   )
 }
 
