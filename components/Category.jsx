@@ -21,16 +21,15 @@ const Category = () => {
   ]
 
   return (
-    <div className='py-[50px] flex flex-col md:flex-row justify-center gap-[30px]'>
+    <div className='py-[50px] flex flex-col md:flex-row justify-between gap-[30px]'>
       {thumbnails.map((img, idx) => (
-        <div className='p-[1rem] flex flex-col items-center justify-end bg-light-gray rounded-[7px]'>
+        <div className='py-[20px] flex flex-col items-center justify-end bg-light-gray rounded-[7px]'>
           <Image 
             key={idx}
             src={img.src}
             alt={img.alt}
-            className='w-[250px]'
           />
-          <h5>{img.alt}</h5>
+          <p className='text-2xl uppercase font-bold'>{img.alt}</p>
           <button className='btn-four mt-[10px] flex items-center gap-[10px]'>
             SHOP
             <Image 
