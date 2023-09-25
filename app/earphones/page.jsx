@@ -11,7 +11,7 @@ const Earphones = () => {
       <div className="bg-black text-white text-center">
         <h2 className="px-[1rem] pt-[3rem] pb-[6rem]">Earphones</h2>
       </div>
-      <div className="container mx-auto px-[1rem]">
+      <div className="container">
         <section className="mb-[6rem]">
           <div className="py-[3.5rem] flex flex-col items-center justify-center lg:flex-row lg:justify-evenly">
             <Image 

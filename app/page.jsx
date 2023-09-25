@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <main>
       <div className="bg-black">
-        <div className="container px-[1rem] mx-auto text-dark-gray bg-hero-mobile bg-contain bg-center bg-no-repeat md:bg-hero-tablet lg:bg-right lg:bg-hero-desktop">
+        <div className="container text-dark-gray bg-hero-mobile bg-contain bg-center bg-no-repeat md:bg-hero-tablet lg:bg-right lg:bg-hero-desktop">
           <div className="py-[5rem] flex items-center justify-center lg:justify-start">
             <div className="max-w-[25rem] text-center shrink lg:text-left">
               <div className="over-line mb-[2rem]">New Product</div>
@@ -21,7 +21,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-[1rem]">
+      <div className="container">
         <section>
           <Category />
         </section>

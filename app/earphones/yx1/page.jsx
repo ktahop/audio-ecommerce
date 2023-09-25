@@ -1,6 +1,12 @@
 import yx1Desktop from '../../../public/assets/product-yx1-earphones/desktop/image-product.jpg'
 import yx1Tablet from '../../../public/assets/product-yx1-earphones/tablet/image-product.jpg'
 import yx1Mobile from '../../../public/assets/product-yx1-earphones/mobile/image-product.jpg'
+import gallery1Desktop from '../../../public/assets/product-yx1-earphones/desktop/image-gallery-1.jpg'
+import gallery2Desktop from '../../../public/assets/product-yx1-earphones/desktop/image-gallery-2.jpg'
+import gallery3Desktop from '../../../public/assets/product-yx1-earphones/desktop/image-gallery-3.jpg'
+import gallery1Mobile from '../../../public/assets/product-yx1-earphones/mobile/image-gallery-1.jpg'
+import gallery2Mobile from '../../../public/assets/product-yx1-earphones/mobile/image-gallery-2.jpg'
+import gallery3Mobile from '../../../public/assets/product-yx1-earphones/mobile/image-gallery-3.jpg'
 import Category from '@/components/Category'
 import About from '@/components/About'
 import Image from "next/image"
@@ -8,10 +14,13 @@ import Link from "next/link"
 
 const YX1 = () => {
   return (
-    <main>
-      <div className="container mx-auto px-[1rem]">
+    <main className='text-darker-gray'>
+      <div className="container">
+        <div className='font-bold text-darker-gray mt-[5rem]'>
+          <Link href='/' className='hover:text-primary transition-colors'>Go Back</Link>
+        </div>
         <section className="mb-[6rem]">
-          <div className="py-[3.5rem] flex flex-col items-center justify-center gap-[5rem] md:flex-row lg:justify-evenly">
+          <div className="py-[3.5rem] flex flex-col items-center justify-between gap-[5rem] md:flex-row">
             <Image 
               src={yx1Desktop}
               alt="yx1 earphones"
@@ -33,12 +42,11 @@ const YX1 = () => {
               <p>
                 Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.
               </p>
-              <Link href={'/earphones/yx1'}>
-                <button className="btn-one">SEE PRODUCT</button>
-              </Link>
+              <p className='font-bold'>$ 599</p>
+              <button className='btn-one'>ADD TO CART</button>
             </div>
           </div>
-          <div className='flex flex-col items-start justify-start lg:flex-row gap-[5rem]'>
+          <div className='pt-[5rem] flex flex-col items-start justify-start lg:flex-row gap-[5rem]'>
             <div className='lg:w-1/2'>
               <h2 className='pb-[2rem]'>Features</h2>
               <p className='pb-[2rem]'>
@@ -59,6 +67,40 @@ const YX1 = () => {
               </ul>
             </div>
           </div>
+        </section>
+        <section className='py-[5rem] flex flex-col justify-center items-center gap-[2rem] lg:flex-row'>
+          <div className='flex flex-col gap-[2rem]'>
+            <Image 
+              src={gallery1Desktop}
+              alt='yx1 earphones'
+              className='rounded-[7px] hidden lg:block'
+            />
+            <Image 
+              src={gallery2Desktop}
+              alt='yx1 earphones inside charging case'
+              className='rounded-[7px] hidden lg:block'
+            />
+            <Image 
+              src={gallery1Mobile}
+              alt='yx1 earphones'
+              className='rounded-[7px] lg:hidden'
+            />
+            <Image 
+              src={gallery2Mobile}
+              alt='yx1 earphones inside charging case'
+              className='rounded-[7px] lg:hidden'
+            />
+          </div>
+          <Image 
+              src={gallery3Desktop}
+              alt='yx1 earphones and charging case'
+              className='rounded-[7px] hidden lg:block'
+            />
+          <Image 
+              src={gallery3Mobile}
+              alt='yx1 earphones and charging case'
+              className='rounded-[7px] lg:hidden'
+            />
         </section>
         <section>
           <Category />

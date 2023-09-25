@@ -25,7 +25,7 @@ const Category = () => {
   ]
 
   return (
-    <div className='py-[3rem] flex flex-col md:flex-row justify-between gap-[2rem]'>
+    <div className='py-[5rem] flex flex-col md:flex-row justify-between gap-[2rem]'>
       {thumbnails.map((img, idx) => (
         <div className='py-[20px] flex flex-col items-center justify-end bg-light-gray rounded-[7px]'>
           <Image 
