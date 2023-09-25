@@ -12,7 +12,7 @@ const Earphones = () => {
         <h2 className="px-[1rem] pt-[3rem] pb-[6rem]">Earphones</h2>
       </div>
       <div className="container mx-auto px-[1rem]">
-        <section className="container mx-auto px-[1rem]">
+        <section className="mb-[6rem]">
           <div className="py-[3.5rem] flex flex-col items-center justify-center lg:flex-row lg:justify-evenly">
             <Image 
               src={yx1Desktop}
@@ -30,7 +30,7 @@ const Earphones = () => {
               <p>
                 Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.
               </p>
-              <Link href={''}>
+              <Link href={'/earphones/yx1'}>
                 <button className="btn-one">SEE PRODUCT</button>
               </Link>
             </div>
