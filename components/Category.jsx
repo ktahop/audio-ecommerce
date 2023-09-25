@@ -34,7 +34,7 @@ const Category = () => {
             alt={img.alt}
             className='max-w-[60%]'
           />
-          <p className='text-2xl uppercase font-bold'>{img.alt}</p>
+          <p className='text-xl uppercase font-bold'>{img.alt}</p>
           <button className='btn-four mt-[10px] flex items-center gap-[10px]'>
             <Link href={img.link}>SHOP</Link>
             <Image 
